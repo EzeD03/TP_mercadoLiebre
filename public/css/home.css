@@ -1,0 +1,133 @@
+body{
+    width: 100%;
+    background-color: var(--colorGris-claro);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Header */
+
+header{
+    *font-family: 'Roboto', sans-serif;
+    background-color: var(--colorAmarillo);
+    margin: auto;
+    padding-top: 12px;
+}
+
+.logo{
+    width: 120px;
+    margin: 16px 0 8px 24px
+}
+
+.searchbar{
+    margin-left: 16px; 
+    height: 14px;
+    width: 150px;
+    background-color: var(--colorGris-claro);
+    color: var(--colorGris-oscuro);
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.search{
+    margin-left: 16px; 
+    background-color: var(--colorGris-claro);
+    text-align: center;
+    width: 14px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.compra{
+    text-align: center;
+}
+
+header ul{
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+
+header ul i{
+    padding-left: 2px;
+}
+
+.burger-menu{
+    text-align: center;
+    padding: 12px 0 24px 0;
+}
+
+.burger-menu i{
+    color: var(--colorGris-claro);
+    padding: 10px 12px;
+    font-size: 24px;
+    background-color: var(--colorCeleste);
+    border-radius: 5px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    padding-left: 5%;
+    height: auto;
+}
+
+.producto{
+    background-color: white;
+}
+
+.precio{
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.descuento{
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+.producto h3{
+    font-size: 16px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.producto img{
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    background-color: white;
+    padding: 5% 0;
+    *text-align: center;
+}
+
+footer div{
+    text-align: center;
+    padding: 5%;
+}
+
+footer div i{
+    color: var(--colorCeleste);
+    font-size: 32px;
+}
+
+footer h3{
+    font-size: 16px;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+.copy{
+    padding-left: 5%;
+}
