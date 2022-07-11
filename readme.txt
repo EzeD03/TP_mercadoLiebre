@@ -1,0 +1,2 @@
+## Rama de diseño adaptativo:
+
