@@ -13,38 +13,40 @@ h1 {
 /* Header */
 
 header{
-    *font-family: 'Roboto', sans-serif;
     background-color: var(--colorAmarillo);
-    margin: auto;
-    padding: 12px 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-evenly;
 }
 
 .logo{
-    width: 120px;
-    margin: 16px 0 8px 24px
+    width: 50%;
+    *padding: 2vh 0 8px 5%
 }
 
 .searchbar{
-    margin-left: 16px; 
+    *margin-left: 16px; 
     height: 14px;
-    width: 150px;
+    width: 50%;
     background-color: var(--colorGris-claro);
     color: var(--colorGris-oscuro);
-    border: 1px solid;
+    border: 1px solid var(--colorGris-claro);
     border-radius: 2px;
 }
 
 .search{
-    margin-left: 16px; 
+    *margin-left: 16px; 
     background-color: var(--colorGris-claro);
     text-align: center;
     width: 14px;
-    border: 1px solid;
+    border: 1px solid var(--colorGris-claro);
     border-radius: 2px;
 }
 
 .compra{
     text-align: center;
+    height: fit-content;
 }
 
 header ul{
@@ -68,6 +70,7 @@ header ul i{
 .burger-menu{
     text-align: center;
     padding: 12px 0 24px 0;
+    height: fit-content;
 }
 
 .burger-menu i{
@@ -80,19 +83,63 @@ header ul i{
 
 /* Main */
 
-main {
-    width: 90%;
-    padding-left: 5%;
-    height: auto;
+.banner{
+    width: 100%;
+}
+
+.basedlastview{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.basedlastview h1{
+    width: 100%;
+}
+
+.offers{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.offers h1{
+    width: 100%;
 }
 
 .producto{
     background-color: white;
+    width: 100%;
     margin: 5px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .producto img{
     width: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.producto i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    top: 3vh;
 }
 
 .product__info{
@@ -100,20 +147,27 @@ main {
     padding: 15px;
 }
 
+.product__info--superior{
+    display: flex;
+    align-items: center;
+}
+
 .precio{
     font-size: 18px;
-    *padding-left: 5%;
+    width: 30%;
+    display: block;
 }
 
 .descuento{
+    color: #39b54a;
     font-size: 16px;
-    *padding-left: 5%;
+    width: 70%;
+
+    display: block;
 }
 
 .product__info h3{
     font-size: 16px;
-    *padding-left: 5%;
-    *padding-bottom: 5%;
     margin: 0;
     display: none;
 }
@@ -125,7 +179,6 @@ main {
 footer{
     background-color: white;
     padding: 5% 0;
-    *text-align: center;
 }
 
 footer div{
@@ -152,7 +205,7 @@ footer p{
 
 /* Adaptative */
 
-@media (min-width: 768px){
+@media (min-width: 361px){
     
     /* Header */
 
@@ -172,16 +225,24 @@ footer p{
 
     .producto{
         box-shadow: 0px 0px 10px rgb(100,100,100);
-
+        width: 45%;
     }
-    
     
     .product__info h3{
         display: block;
     }
 
+    .product__info--superior{
+        text-align: center;
+    }
+
 }
 
-@media (min-width: 1024px){
+@media (min-width: 769px){
+
+    .producto{
+        width: 20%;
+    }
+
 
 }
