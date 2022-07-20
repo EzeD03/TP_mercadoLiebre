@@ -15,43 +15,55 @@ h1 {
 header{
     background-color: var(--colorAmarillo);
     display: flex;
-    flex-wrap: wrap;
     padding: 5%;
+    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container__superior{
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 .logo{
     width: 50%;
-    *padding: 2vh 0 8px 5%
+    height: fit-content;
+    padding-right: 2%
 }
 
 .searchbar{
-    *margin-left: 16px; 
-    height: 14px;
+    height: 7vh;
     width: 50%;
+    padding-left: 2%;
     background-color: var(--colorGris-claro);
     color: var(--colorGris-oscuro);
     border: 1px solid var(--colorGris-claro);
-    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 14px;
 }
 
-.search{
-    *margin-left: 16px; 
-    background-color: var(--colorGris-claro);
-    text-align: center;
-    width: 14px;
-    border: 1px solid var(--colorGris-claro);
-    border-radius: 2px;
+.text__searchbar{
+    width: 95%;
+    height: 3vh;
+    overflow: hidden;
 }
 
 .compra{
+    margin: 4% 0;
+    width: 100%;
     text-align: center;
     height: fit-content;
 }
 
 header ul{
     list-style: none;
-    display: block;
     padding: 0;
 }
 
@@ -59,17 +71,17 @@ header ul i{
     padding-left: 2px;
 }
 
-.sitenavbar{
-    display: none;    
+.navegacion{
+    display: none;
 }
 
-.loginbar{
-    display: none;
+.navegacion ul{
+    *width: max-content;
 }
 
 .burger-menu{
     text-align: center;
-    padding: 12px 0 24px 0;
+    margin: 12px 0 0px 0;
     height: fit-content;
 }
 
@@ -96,6 +108,8 @@ header ul i{
 
 .basedlastview h1{
     width: 100%;
+    color: grey;
+    margin: 5vh;
 }
 
 .offers{
@@ -107,12 +121,14 @@ header ul i{
 
 .offers h1{
     width: 100%;
+    color: grey;
+    margin: 5vh;
 }
 
 .producto{
     background-color: white;
     width: 100%;
-    margin: 5px 0;
+    margin: 0 0 10vh 0;
     display: flex;
     flex-direction: column;
 }
@@ -149,7 +165,7 @@ header ul i{
 
 .product__info--superior{
     display: flex;
-    align-items: center;
+    *align-items: center;
 }
 
 .precio{
@@ -172,13 +188,11 @@ header ul i{
     display: none;
 }
 
-
-
 /* Footer */
 
 footer{
     background-color: white;
-    padding: 5% 0;
+    padding: 0 0 2%;
 }
 
 footer div{
@@ -199,24 +213,53 @@ footer p{
     font-size: 12px;
 }
 
-.copy{
-    padding-left: 5%;
-}
-
 /* Adaptative */
 
 @media (min-width: 361px){
-    
+
     /* Header */
 
-    .sitenavbar{
-        display: block;    
-    }
-    
-    .loginbar{
-        display: block;
+    header{
+        display: flex;
+        padding: 2.5%;
     }
 
+    .container__superior{
+        width: 50%;
+    }
+
+    .logo{
+        width: 60%;
+    }
+    
+    .searchbar{
+        width: 60%;
+    }
+
+    .compra{
+        margin: 0 2%;
+        width: fit-content;
+    }
+
+    .navegacion{
+        margin-top: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sitenavbar{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .loginbar{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .burger-menu{
         display: none;
     }
@@ -228,21 +271,42 @@ footer p{
         width: 45%;
     }
     
+    .precio{
+        width: max-content;
+    }
+
+    .descuento{
+        width: 50%;
+    }
+
     .product__info h3{
         display: block;
     }
-
-    .product__info--superior{
-        text-align: center;
-    }
-
 }
 
 @media (min-width: 769px){
 
+    body{
+        font-size: 14px;
+    }
+
+    /* Header */
+
+    .container__superior{
+        width: 60%;
+    }
+
+    .loginbar{
+        width: 35%;
+    }
+
+    .sitenavbar{
+        width: 35%;
+    }
+
+    /* Main */
+
     .producto{
         width: 20%;
     }
-
-
 }
