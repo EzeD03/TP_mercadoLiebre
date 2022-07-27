@@ -49,10 +49,13 @@ header{
     font-size: 14px;
 }
 
-.text__searchbar{
-    width: 95%;
-    height: 3vh;
+.searchbar input{
+    width: 90%;
+    height: 70%;
+    margin-right: 5%;
     overflow: hidden;
+    background-color: var(--colorGris-claro);
+    border: none;
 }
 
 .compra{
@@ -77,6 +80,11 @@ header ul i{
 
 .navegacion ul{
     *width: max-content;
+}
+
+.loginbar a{
+    text-decoration: none;
+    color: #000;
 }
 
 .burger-menu{

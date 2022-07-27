@@ -1,0 +1,106 @@
+.register__container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 10px;
+}
+
+.register__container h1{
+    width: 100%;
+    text-align: center;
+}
+
+.profile__form, .birth__form, .profiletype__form , .interest__form{
+    width: 100%;
+}
+
+.register__container h2{
+    width: 100%;
+}
+
+.profile__form input, .birth__form input {
+    margin: 5px 0;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.profiletype__form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.profiletype__form h2{
+    width: 100%;
+}
+
+.profiletype__form input{
+    width: 10%;
+    height: 14px;
+}
+
+.interest__form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interest__form label, .interest__form input{
+    margin: 15px 0;
+}
+
+.interest__form label{
+    width: 90%;
+}
+
+.interest__form input{
+    width: 10%;
+}
+
+.register__container a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button__registrar{
+    width: 50%;
+    background-color: var(--colorCeleste);
+    color: var(--colorGris-claro);
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+}
+
+@media (min-width: 768px){
+
+    .register__container{
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .profile__form, .birth__form{
+        width: 45%;
+        height: 150px;
+    }
+
+    .interest__form{
+        width: 90%;
+        height: 250px;
+    }
+
+    .profiletype__form{
+        width: 90%;
+    }
+
+    .register__container a{
+        width: 60%;
+    }
+}
