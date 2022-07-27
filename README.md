@@ -1,11 +1,11 @@
-# Rama de diseño adaptativo:
+# Rama de "Diseño adaptativo":
 
 https://github.com/EzeD03/TP_mercadoLiebre/tree/adaptative_design
 
-# Rama de posicionamiento con Flexbox:
+# Rama de "Posicionamiento con Flexbox":
 
 https://github.com/EzeD03/TP_mercadoLiebre/tree/flexbox_posicionating
 
-# Rama de Formularios:
+# Rama de "Formularios":
 
 https://github.com/EzeD03/TP_mercadoLiebre/tree/formularios
