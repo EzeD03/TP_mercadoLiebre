@@ -30,6 +30,12 @@
 .login__form button{
     background-color: var(--colorCeleste);
     color: var(--colorGris-claro);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.login__form button:hover{
+    background-color: #0022AA;
 }
 
 .login__form a, .login__form p{
